@@ -15,7 +15,7 @@ This web application is designed to help users generate personalized study plans
 3. **Testing and Deployment**: Deploy the application on a web server and conduct user testing.
 
 ## Tech Stack
-- Frontend Framework: Vue.js(Version 3)
+- Frontend Framework: Vue.js(Version 3) using vite
 
 ## Note
 **This project is based on the course selection model of Swinburne University of Technology and may not be applicable to other institutions.**
