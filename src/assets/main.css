@@ -1,35 +1,97 @@
-@import './base.css';
+/* Global Styles */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* CSS Reset */
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 包括 padding 和 border 在内的总宽度和总高度 */
+  width: 100%;
 }
 
-a,
-.green {
+*, *::before, *::after {
+  box-sizing: inherit; /* 从父元素继承 box-sizing */
+}
+
+/* App Container */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  min-height: 100vh; /* Full height layout */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Header */
+.app-header {
+  background-color: white; /* 更改背景颜色 */
+  padding: 1rem; /* 水平和垂直内边距一致 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 底部阴影 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* 确保它取满整个视口宽度 */
+}
+
+/* Navbar */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; /* No default margin */
+}
+
+.navbar ul li {
+  margin-left: 20px; /* Space between items */
+}
+
+.navbar ul li a {
+  color: black; /* Text color */
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  font-weight: bold; /* Make it bold */
+  transition: color 0.3s ease; /* Smooth color transition for hover */
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.navbar ul li a:hover {
+  color: red; /* Swinburne red for hover */
 }
 
+/* Logo */
+.logo {
+  height: 60px; /* Adjust logo size */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* Main Content */
+.main {
+  flex: 1; /* Take available space */
+  padding: 20px;
+  width: 100%; /* Ensure it takes full width */
+  /* 移除 Flex 属性以允许内容自然流动 */
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+  color: white;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Media Queries */
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  .navbar ul {
+    justify-content: center;
   }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+/* Titles */
+.title {
+  color: black;
+  margin: 0;
+  font-size: 24px;
 }
