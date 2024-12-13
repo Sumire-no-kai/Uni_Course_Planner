@@ -16,6 +16,7 @@ This web application is designed to help users generate personalized study plans
 
 ## Tech Stack
 - Frontend Framework: Vue.js(Version 3) using vite
+- IDE: WebStorm 2024.3
 
 ## Note
 **This project is based on the course selection model of Swinburne University of Technology and may not be applicable to other institutions.**
