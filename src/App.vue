@@ -2,7 +2,9 @@
   <div class="app-container">
     <header class="app-header">
       <div class="header-content">
-        <img alt="University logo" class="logo" src="./assets/swinburne.png"/>
+        <router-link to="/index" class="logo">
+          <img alt="University logo" class="logo" src="./assets/swinburne.png"/>
+        </router-link>
         <h1 class="title">Swinburne Unit Planner</h1>
       </div>
       <nav class="navbar">
