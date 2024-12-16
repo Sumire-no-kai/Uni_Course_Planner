@@ -1,23 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import App from '../App.vue';
 import Planner from "@/views/Planner.vue";
 import About from "@/views/About.vue";
+import Index from "@/views/Index.vue";
 
 const routes = [
     {
-        path: '/',
+        path: '/index',
         name: 'Home',
-        component: App  // 这是你的主页
+        component: Index
     },
     {
         path: '/planner',
         name: 'Planner',
-        component: Planner  // 确保这里引用正确
+        component: Planner
     },
     {
         path: '/about',
         name: 'About',
-        component: About  // 确保这里引用正确
+        component: About
     }
 ];
 
